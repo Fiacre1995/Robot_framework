@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231010 21:07:25.188" rpa="false" schemaversion="4">
+<suite id="s1" name="Standard" source="C:\Users\LENOVO\PycharmProjects\RobotFrameworkProject\Test\Selenium_library\Standard.robot">
+<test id="s1-t1" name="Convertir en miniscule" line="9">
+<kw name="Convert To Lower Case" library="String">
+<var>${str1}</var>
+<arg>ABC</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${str1} = abc</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${str2}</var>
+<arg>1Acb5Y</arg>
+<doc>Converts string to lower case.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${str2} = 1acb5y</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str1}</arg>
+<arg>abc</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str2}</arg>
+<arg>1acb5y</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</test>
+<test id="s1-t2" name="Convertir en majuscule" line="15">
+<kw name="Convert To Upper Case" library="String">
+<var>${str1}</var>
+<arg>abc</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${str1} = ABC</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Convert To Upper Case" library="String">
+<var>${str2}</var>
+<arg>1Acb5Y</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${str2} = 1ACB5Y</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str1}</arg>
+<arg>ABC</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${str2}</arg>
+<arg>1ACB5Y</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</test>
+<test id="s1-t3" name="Generer un random" line="21">
+<kw name="Generate Random String" library="String">
+<var>${random}</var>
+<arg>12</arg>
+<arg>[LOWER]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${random} = jrjccbvzmyya</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${random}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">jrjccbvzmyya</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</test>
+<test id="s1-t4" name="Supprimer chaine de caractere" line="25">
+<kw name="Remove String" library="String">
+<var>${sup}</var>
+<arg>Robot framework</arg>
+<arg>work</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">${sup} = Robot frame</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${sup}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231010 21:07:25.250" level="INFO">Robot frame</msg>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</kw>
+<status status="PASS" starttime="20231010 21:07:25.250" endtime="20231010 21:07:25.250"/>
+</test>
+<test id="s1-t5" name="Remplacer des caractéres" line="28">
+<kw name="Replace String" library="String">
+<var>${remplace}</var>
+<arg>Selenium</arg>
+<arg>e</arg>
+<arg>a</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20231010 21:07:25.266" level="INFO">${remplace} = Salanium</msg>
+<status status="PASS" starttime="20231010 21:07:25.266" endtime="20231010 21:07:25.266"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${remplace}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231010 21:07:25.266" level="INFO">Salanium</msg>
+<status status="PASS" starttime="20231010 21:07:25.266" endtime="20231010 21:07:25.266"/>
+</kw>
+<status status="PASS" starttime="20231010 21:07:25.266" endtime="20231010 21:07:25.266"/>
+</test>
+<doc>Librairie pour faire des modifications sur les chaines de caractéres</doc>
+<status status="PASS" starttime="20231010 21:07:25.188" endtime="20231010 21:07:25.266"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Standard">Standard</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
